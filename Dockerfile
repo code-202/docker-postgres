@@ -1,4 +1,4 @@
-FROM postgres:11-alpine
+FROM postgres:15-alpine
 
 MAINTAINER jn.germon@code202.fr
 
