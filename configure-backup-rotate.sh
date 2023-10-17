@@ -53,3 +53,6 @@ if [ $crond_running == 1 ]; then
     echo "crond is not running, we start it"
     crond
 fi
+
+# Create first file to init logrotate
+touch $BACKUP_FILE
