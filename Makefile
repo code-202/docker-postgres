@@ -1,4 +1,4 @@
-VERSION=15
+VERSION=17
 
 build:
 	docker build -t code202/postgres:$(VERSION) .

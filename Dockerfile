@@ -1,14 +1,11 @@
-FROM postgres:15-alpine
+FROM postgres:17-alpine
 
-MAINTAINER jn.germon@code202.fr
+LABEL org.opencontainers.image.authors="jn.germon@code202.fr"
 
-RUN apk update && \
-    apk add \
-        logrotate \
-    && rm -rf /var/cache/apk/*
-
+RUN apk add --no-cache \
+    logrotate 
 # make life easier
-ENV TERM xterm
+ENV TERM=xterm
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
