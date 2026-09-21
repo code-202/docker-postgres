@@ -1,4 +1,4 @@
-FROM postgres:17-alpine
+FROM postgres:18.6-alpine
 
 LABEL org.opencontainers.image.authors="jn.germon@code202.fr"
 
